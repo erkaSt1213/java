@@ -1,0 +1,14 @@
+image_container {
+    width: 100%;
+}
+
+
+
+
+
+
+
+.slider_container {
+	display: flex;
+	justify-content: center;
+}

@@ -1,0 +1,51 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <form action="process.php" method="POST">
+      <label for="firstname">овог:</label>
+      <input type="text" id="firstname" name="firstname" required /><br />
+
+      <label for="lastname">нэр:</label>
+      <input type="text" id="lastname" name="lastname" required /><br />
+
+      <label for="age">нас:</label>
+      <input type="number" id="age" name="age" required /><br />
+
+      <label>хүйс:</label>
+      <input type="radio" id="male" name="gender" value="Male" required />
+      <label for="male">эр</label>
+      <input type="radio" id="female" name="gender" value="Female" required />
+      <label for="female">эм</label><br />
+
+      <label for="email">и-мэйл:</label>
+      <input type="email" id="email" name="email" required /><br />
+
+      <label for="address">хаяг:</label>
+      <textarea id="address" name="address" required></textarea><br />
+
+      <label for="married">гэрлэсэн эсэх:</label>
+      <input type="checkbox" id="married" name="married" value="Yes" /><br />
+
+      <label>хобби:</label><br />
+      <input type="checkbox" name="hobbies[]" value="Reading" /> сагсан
+      бөмбөг<br />
+      <input type="checkbox" name="hobbies[]" value="Traveling" /> гар бөмбөг<br />
+      <input type="checkbox" name="hobbies[]" value="Cooking" /> хөр бөмбөг<br />
+      <input type="checkbox" name="hobbies[]" value="Sports" /> теннис<br />
+
+      <label for="education">боловсрол:</label>
+      <select id="education" name="education" required>
+        <option value="High School">дээд</option>
+        <option value="Bachelor's Degree">дунд</option>
+        <option value="Master's Degree">бага</option></select
+      ><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
